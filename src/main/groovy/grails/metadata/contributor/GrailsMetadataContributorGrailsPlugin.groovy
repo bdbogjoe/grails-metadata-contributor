@@ -57,8 +57,8 @@ Brief summary/description of the plugin.
 
     void doWithApplicationContext() {
         // TODO Implement post initialization spring config (optional)
-        println "Metadata contributor from context : " + applicationContext.getBean(MetadataContributor)
-        println "Contributor set to factory : " + applicationContext.getBean(HibernateConnectionSourceFactory).metadataContributor
+        println "********************* Metadata contributor from context : " + applicationContext.getBean(MetadataContributor)
+        println "**********************Contributor set to factory : " + applicationContext.getBean(HibernateConnectionSourceFactory).metadataContributor
     }
 
     void onChange(Map<String, Object> event) {
